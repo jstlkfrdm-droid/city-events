@@ -7,12 +7,45 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Шапка з назвою і навігацією -->
-    <!-- Блок фільтра за датою/категорією -->
-    <!-- Список подій (картки) -->
-    <!-- Блок деталей обраної події -->
-    <!-- Підвал -->
-    
+    <header>
+        <h1>Афіша подій міста</h1>
+        <nav>
+            <a href="#events">Події</a>
+            <a href="#details">Обрана подія</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>Фільтр за датою/категорією</h2>
+            <label for="event-date">Оберіть дату:</label>
+            <input type="date" id="event-date" name="event-date">
+        </section>
+
+        <section id="events">
+            <h2>Події</h2>
+            <article>
+                <h3>Виставка  мистецтва</h3>
+                <img src="assets/img/art.jpg" alt="Експозиція картин у галереї">
+            </article>
+
+            <article>
+                <h3>Фестиваль вуличного кіно</h3>
+                <img src="assets/img/concert.jpg" alt="Актори в історичних костюмах на сцені театру">
+            </article>
+        </section>
+    </main>
+
+    <aside id="details">
+        <h2>Деталі обраної події</h2>
+        <p>Місце проведення, час та вартість квитків  заходу.</p>
+    </aside>
+
+    <footer>
+        <p>Контакти організаторів: dailyinfo@city-events.kiyv.ua | &copy; 2026</p>
+    </footer>
+
     <script src="js/app.js"></script>
 </body>
 </html>
+
