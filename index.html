@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Афіша подій міста</title>
+    <!-- Підключення шрифтів Google Fonts для красивого дизайну -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -26,14 +30,28 @@
             <section id="events">
                 <h2>Події</h2>
                 <div class="cards">
+                    <!-- Картка 1 -->
                     <article>
-                        <h3>Виставка  мистецтва</h3>
-                        <img src="assets/img/art.jpg" alt="Експозиція картин у галереї">
+                        <span class="badge badge-art">Мистецтво</span>
+                        <div class="event-date">12 листопада 2026</div>
+                        <h3>Виставка мистецтва</h3>
+                        <img src="https://placehold.co/600x400/007BFF/FFF?text=Виставка" alt="Експозиція картин у галереї">
                     </article>
 
+                    <!-- Картка 2 -->
                     <article>
+                        <span class="badge badge-cinema">Кіно</span>
+                        <div class="event-date">15 листопада 2026</div>
                         <h3>Фестиваль вуличного кіно</h3>
-                        <img src="assets/img/concert.jpg" alt="Актори в історичних костюмах на сцені театру">
+                        <img src="https://placehold.co/600x400/E67E22/FFF?text=Кіно" alt="Актори в історичних костюмах на сцені театру">
+                    </article>
+
+                    <!-- Картка 3 (Додана для демонстрації 3-х колонок) -->
+                    <article>
+                        <span class="badge badge-art">Театр</span>
+                        <div class="event-date">20 листопада 2026</div>
+                        <h3>Вистава просто неба</h3>
+                        <img src="https://placehold.co/600x400/900C3F/FFF?text=Театр" alt="Театральна вистава">
                     </article>
                 </div>
             </section>
@@ -41,7 +59,7 @@
 
         <aside id="details">
             <h2>Деталі обраної події</h2>
-            <p>Місце проведення, час та вартість квитків  заходу.</p>
+            <p>Місце проведення, час та вартість квитків заходу.</p>
         </aside>
     </div>
 
